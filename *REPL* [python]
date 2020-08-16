@@ -1,0 +1,111 @@
+Python 3.8.2 (default, Jul 16 2020, 14:00:26) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 5+5
+10
+>>> clear
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> 5+6
+11
+>>> 10%3
+1
+>>> 10/3
+3.3333333333333335
+>>> 5**5
+3125
+>>> 5**3
+125
+>>> nombre=1,2
+>>> Type(nombre)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Type' is not defined
+>>> nombre=1,2; type(nombre)
+<class 'tuple'>
+>>> numero=1; numero1=4; if numero == numero1:
+	pass
+  File "<stdin>", line 1
+    numero=1; numero1=4; if numero == numero1:
+                         ^
+SyntaxError: invalid syntax
+>>>   File "<stdin>", line 1
+    pass
+    ^
+IndentationError: unexpected indent
+>>> numero=1; numero1=4; if numero == numero1: print("son iguales")
+	pass
+  File "<stdin>", line 1
+    numero=1; numero1=4; if numero == numero1: print("son iguales")
+                         ^
+SyntaxError: invalid syntax
+>>>   File "<stdin>", line 1
+    pass
+    ^
+IndentationError: unexpected indent
+>>> numero=1; numero1=4; if numero == numero1:
+  File "<stdin>", line 1
+    numero=1; numero1=4; if numero == numero1:
+                         ^
+SyntaxError: invalid syntax
+>>> numero=1; numero1=4; if numero == numero1: 
+  File "<stdin>", line 1
+    numero=1; numero1=4; if numero == numero1: 
+                         ^
+SyntaxError: invalid syntax
+
+>>> numero=1; numero1=4; if numero == numero1:; 
+  File "<stdin>", line 1
+    numero=1; numero1=4; if numero == numero1:; 
+    ^
+IndentationError: unexpected indent
+>>> clear
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'clear' is not defined
+>>> if 4 > 5:
+... print("no")
+  File "<stdin>", line 2
+    print("no")
+    ^
+IndentationError: expected an indented block
+>>> if 4 > 5:
+... print("no")
+  File "<stdin>", line 2
+    print("no")
+    ^
+IndentationError: expected an indented block
+>>> if 4 > 5:
+... else:
+  File "<stdin>", line 2
+    else:
+    ^
+IndentationError: expected an indented block
+>>> if 4 > 5:
+... print("no"),
+  File "<stdin>", line 2
+    print("no"),
+    ^
+IndentationError: expected an indented block
+>>> if 4 > 5:
+... print("no")
+  File "<stdin>", line 2
+    print("no")
+    ^
+IndentationError: expected an indented block
+>>> if 4 > 5:
+... 	print("no")	
+... else:
+... 	print("si")
+... 
+si
+>>> if 4 > 5:
+... 	print("si")
+... if 4 > 5:
+  File "<stdin>", line 3
+    if 4 > 5:
+    ^
+SyntaxError: invalid syntax
+>>> 
