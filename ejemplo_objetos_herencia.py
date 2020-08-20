@@ -47,16 +47,16 @@ class Furgoneta(Vehiculos):
 			return "la Furgoneta NO esta cargada"
 
 class VElectricos(Vehiculos):
-	def __init__(self):
+
+	def __init__(self,marca,modelo):
+		super().__init__(marca,modelo)
 		self.autonomia=100
 
 	def cargarEnergia(self):
 		self.cargando=True
 
 class BicicletaElectrica(VElectricos,Vehiculos):
-	super
 	pass
-		
 		
 
 miMoto=Moto("honda","CBR")
@@ -68,4 +68,5 @@ miFurgo.arrancar()
 miFurgo.carga(True)
 miFurgo.estado()		
 print("--------------")
-miBici=BicicletaElectrica()
+miBici=BicicletaElectrica("orgel","cd1030")
+miBici.estado()
