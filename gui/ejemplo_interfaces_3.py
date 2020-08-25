@@ -4,7 +4,7 @@ root=Tk()
 miFrame=Frame(root, width=1200, height=600)
 miFrame.pack()
 
-
+miNombre=StringVar()
 
 nombreLabel=Label(miFrame, text="Nombre: ",padx=10, pady=10)
 nombreLabel.grid(row=0,column=0, sticky="e")
@@ -21,8 +21,7 @@ direccionLabel.grid(row=3,column=0, sticky="e")
 comentariosLabel=Label(miFrame, text="Comentarios: ")
 comentariosLabel.grid(row=4,column=0, sticky="e",padx=10, pady=10)
 
-
-cuadroNombre=Entry(miFrame)
+cuadroNombre=Entry(miFrame,textvariable=miNombre)
 cuadroNombre.grid(row=0,column=1,padx=10, pady=10)
 cuadroNombre.config(fg="red", justify="center")
 
@@ -42,5 +41,12 @@ textoComentario.grid(row=4,column=1,padx=10, pady=10)
 scrollVert=Scrollbar(miFrame, command=textoComentario.yview)
 scrollVert.grid(row=4,column=2, sticky="nsew")
 
+textoComentario.config(yscrollcommand=scrollVert.set)
+
+def codigoBoton():
+	miNombre.set("Iván")
+
+botonEnvio=Button(root,text="Enviar", command=codigoBoton)
+botonEnvio.pack()
 
 root.mainloop()
